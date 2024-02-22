@@ -2,7 +2,7 @@
 This project focuses on implementing an abstractive text summarization system using the Pegasus model. We first evaluate various Transformer models including T5, BART, GPT2 and Pegasus on the CNN/Daily Mail dataset, and based on the evaluation metrics (ROUGE and BLEU scores), we found that Pegasus outperformed the others.
 
 #Evaluation on CNN/Daily Mail Dataset
-We evaluated the performance of three Transformer models, T5, BERT, and Pegasus, on the CNN/Daily Mail dataset for abstractive text summarization. Here are the evaluation results![summarise1](https://github.com/Arpit-Avasarmol/Text-Summarization/assets/88440241/1d971ec3-5c06-4e25-8792-811a431e8bfc)
+We evaluated the performance of three Transformer models, T5, BERT, and Pegasus, on the CNN/Daily Mail dataset for abstractive text summarization. Here are the evaluation results.
 :
 
 | Model   | rouge1    | rouge2    | rougeL    | rougeLsum |
