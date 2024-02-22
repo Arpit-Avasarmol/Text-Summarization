@@ -1,4 +1,5 @@
 ## Abstractive Text Summarization using Pegasus Model
+
 This project focuses on implementing an abstractive text summarization system using the Pegasus model. We first evaluate various Transformer models including T5, BART, GPT2 and Pegasus on the CNN/Daily Mail dataset, and based on the evaluation metrics (ROUGE and BLEU scores), we found that Pegasus outperformed the others.
 
 **Evaluation on CNN/Daily Mail Dataset**
@@ -19,11 +20,14 @@ NOTE: This Rogue score is calculated only for one Sample and not the whole datas
 Based on the evaluation metrics, we selected the Pegasus model for further experimentation and deployment.
 
 **SAMSum Dataset and Fine-Tuning**
+
 We first evaluated the SacreBLEU score and Rogue Score, and found that Pegasus outperformed other models. Then for fine-tuning, we used the SAMSum (Short Ad-hoc Message Summarization), a  dataset designed for the task of summarizing short conversational messages, particularly from social media platforms like WhatsApp. It consists of dialogue data with messages exchanged between speakers, along with manually annotated summaries for each conversation. We fine-tuned the Pegasus model on this dataset to adapt it to our specific domain.
 
 **Deployment on Gradio App**
+
 We deployed the fine-tuned Pegasus model on a Gradio app for easy access and usage. Users can input lengthy text documents such as app reviews, and the model will generate abstractive summaries in real-time.
 
 **Summarisation of Text on Gradio:**
+
 ![summarise1](https://github.com/Arpit-Avasarmol/Text-Summarization/assets/88440241/1eadec4d-5c1f-495d-b745-1b930e9ca681)
 ![Summarise2](https://github.com/Arpit-Avasarmol/Text-Summarization/assets/88440241/b029be7f-45a7-457c-8d48-a14f9a57b6be)
