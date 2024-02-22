@@ -17,8 +17,8 @@ NOTE: This Rogue score is calculated only for one Sample and not the whole datas
 
 Based on the evaluation metrics, we selected the Pegasus model for further experimentation and deployment.
 
-**Custom Dataset and Fine-Tuning**
-We collected a custom dataset of Google Play reviews using the Google-Play-Scrapper library, which contains reviews for various apps along with their ratings. We fine-tuned the Pegasus model on this custom dataset to adapt it to our specific domain.
+**SAMSum Dataset and Fine-Tuning**
+We first evaluated the SacreBLEU score and Rogue Score, and found that Pegasus outperformed other models. Then for fine-tuning, we used the SAMSum (Short Ad-hoc Message Summarization), a  dataset designed for the task of summarizing short conversational messages, particularly from social media platforms like WhatsApp. It consists of dialogue data with messages exchanged between speakers, along with manually annotated summaries for each conversation. We fine-tuned the Pegasus model on this dataset to adapt it to our specific domain.
 
 **Deployment on Gradio App**
 We deployed the fine-tuned Pegasus model on a Gradio app for easy access and usage. Users can input lengthy text documents such as app reviews, and the model will generate abstractive summaries in real-time.
