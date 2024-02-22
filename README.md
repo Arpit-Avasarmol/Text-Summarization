@@ -6,6 +6,7 @@ This Repository contains two files:
    - For different models we have evaluated the Rogue scores on the CNN Dailymail Dataset
 3. TextSummarisation:
    - We have finetuned our Pegasus Model on the SAMsum Dataset and also deployed on Gradio App
+     
 **Evaluation on CNN/Daily Mail Dataset**
 
 We evaluated the performance of three Transformer models, T5, BERT, and Pegasus, on the CNN/Daily Mail dataset for abstractive text summarization. Here are the evaluation results:
@@ -21,6 +22,7 @@ We evaluated the performance of three Transformer models, T5, BERT, and Pegasus,
 NOTE: This Rogue score is calculated only for one Sample and not the whole dataset.
 
 Based on the evaluation metrics, we selected the Pegasus model for further experimentation and deployment.
+
 
 **SAMSum Dataset and Fine-Tuning**
 
