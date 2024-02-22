@@ -13,10 +13,12 @@ We evaluated the performance of three Transformer models, T5, BERT, and Pegasus,
 | bart    | 0.365591  | 0.131868  | 0.215054  | 0.322581  |
 | pegasus | 0.500000  | 0.244898  | 0.360000  | 0.460000  |
 
+NOTE: This Rogue score is calculated only for one Sample and not the whole dataset.
+
 Based on the evaluation metrics, we selected the Pegasus model for further experimentation and deployment.
 
 **Custom Dataset and Fine-Tuning**
-We collected a custom dataset using the Google-Play-Scrapper library, which contains reviews for various apps along with their ratings. We fine-tuned the Pegasus model on this custom dataset to adapt it to our specific domain.
+We collected a custom dataset of Google Play reviews using the Google-Play-Scrapper library, which contains reviews for various apps along with their ratings. We fine-tuned the Pegasus model on this custom dataset to adapt it to our specific domain.
 
 **Deployment on Gradio App**
 We deployed the fine-tuned Pegasus model on a Gradio app for easy access and usage. Users can input lengthy text documents such as app reviews, and the model will generate abstractive summaries in real-time.
