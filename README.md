@@ -1,7 +1,7 @@
 ## Abstractive Text Summarization using Pegasus Model
 This project focuses on implementing an abstractive text summarization system using the Pegasus model. We first evaluate various Transformer models including T5, BART, GPT2 and Pegasus on the CNN/Daily Mail dataset, and based on the evaluation metrics (ROUGE and BLEU scores), we found that Pegasus outperformed the others.
 
-#Evaluation on CNN/Daily Mail Dataset
+**Evaluation on CNN/Daily Mail Dataset**
 We evaluated the performance of three Transformer models, T5, BERT, and Pegasus, on the CNN/Daily Mail dataset for abstractive text summarization. Here are the evaluation results.
 :
 
@@ -15,12 +15,12 @@ We evaluated the performance of three Transformer models, T5, BERT, and Pegasus,
 
 Based on the evaluation metrics, we selected the Pegasus model for further experimentation and deployment.
 
-#Custom Dataset and Fine-Tuning
+**Custom Dataset and Fine-Tuning**
 We collected a custom dataset using the Google-Play-Scrapper library, which contains reviews for various apps along with their ratings. We fine-tuned the Pegasus model on this custom dataset to adapt it to our specific domain.
 
-#Deployment on Gradio App
+**Deployment on Gradio App**
 We deployed the fine-tuned Pegasus model on a Gradio app for easy access and usage. Users can input lengthy text documents such as app reviews, and the model will generate abstractive summaries in real-time.
 
-#Summarisation of Text on Gradio:
+**Summarisation of Text on Gradio:**
 ![summarise1](https://github.com/Arpit-Avasarmol/Text-Summarization/assets/88440241/1eadec4d-5c1f-495d-b745-1b930e9ca681)
 ![Summarise2](https://github.com/Arpit-Avasarmol/Text-Summarization/assets/88440241/b029be7f-45a7-457c-8d48-a14f9a57b6be)
